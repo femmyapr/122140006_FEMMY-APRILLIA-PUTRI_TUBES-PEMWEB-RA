@@ -1,22 +1,31 @@
-// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; // Gunakan Switch di versi 5
-import Home from './pages/Home';
-import Books from './pages/Books';
-import Categories from './pages/Categories';
-import AddBook from './pages/AddBook';
+import { Provider } from 'react-redux';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import store from './redux/store';
+import Register from './pages/Register';  // Impor halaman Register
+import Navbar from './pages/Navbar';  // Impor Navbar
+import Home from './pages/Home';  // Halaman Beranda
+import AddBook from './pages/AddBook';  // Halaman untuk menambahkan buku
+import Books from './pages/Books';  // Halaman daftar buku
+import Categories from './pages/Categories';  // Halaman kategori buku
+import Login from './pages/Login';  // Halaman login
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <Switch>  {/* Gunakan Switch di sini */}
-        <Route exact path="/" component={Home} />
-        <Route path="/books" component={Books} />
-        <Route path="/categories" component={Categories} />
-        <Route path="/add-book" component={AddBook} />
-      </Switch>
-    </Router>
+    <Provider store={store}>  {/* Provider Redux untuk state management */}
+      <Router>
+        <Navbar />  {/* Navbar ditampilkan di setiap halaman */}
+        <Routes>
+          <Route path="/" element={<Home />} />  {/* Halaman Beranda */}
+          <Route path="/books" element={<Books />} />  {/* Halaman Buku */}
+          <Route path="/add-book" element={<AddBook />} />  {/* Halaman tambah buku */}
+          <Route path="/categories" element={<Categories />} />  {/* Halaman kategori */}
+          <Route path="/login" element={<Login />} />  {/* Halaman Login */}
+          <Route path="/register" element={<Register />} />  {/* Halaman Register */}
+        </Routes>
+      </Router>
+    </Provider>
   );
-}
+};
 
 export default App;

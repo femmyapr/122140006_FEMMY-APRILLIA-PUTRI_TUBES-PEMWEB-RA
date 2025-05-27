@@ -1,14 +1,16 @@
 // src/index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { store } from './redux/store'; // Mengimpor store Redux
+import store from './redux/store'; // ✅ Tidak pakai kurung kurawal
 import App from './App';
-import './index.css'; // Pastikan file index.css diimpor di sini
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
-  document.getElementById('root') // Harus mencocokkan ID dari element 'root' di index.html
+  document.getElementById('root')
 );
