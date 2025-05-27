@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; // Gunakan Switch di versi 5
+import Home from './pages/Home';
+import Books from './pages/Books';
+import Categories from './pages/Categories';
+import AddBook from './pages/AddBook';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>  {/* Gunakan Switch di sini */}
+        <Route exact path="/" component={Home} />
+        <Route path="/books" component={Books} />
+        <Route path="/categories" component={Categories} />
+        <Route path="/add-book" component={AddBook} />
+      </Switch>
+    </Router>
   );
 }
 

@@ -1,13 +1,185 @@
-body {
+/* General Reset */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f8fc;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: white;
+  color:#007bff;
+}
+
+header .logo {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #3c3f42;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  background-color: #90caf9;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #003c8f;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #003c8f;
+  margin-bottom: 20px;
+}
+
+.hero .cta-btn {
+  padding: 15px 30px;
+  background-color: #ff9800;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero .cta-btn:hover {
+  background-color: #fb8c00;
+}
+
+/* Book List Section */
+.book-list {
+  padding: 40px 20px;
+  text-align: left;
+
+}
+
+.book-list h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.book-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.book-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+
+}
+
+.book-info p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.book-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.edit-btn, .delete-btn {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+}
+
+/* Tombol Tambah Buku */
+.add-book-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 15px 30px; /* Perbesar padding untuk kotak */
+  background-color: #1976d2; /* Warna biru */
+  color: white;
+  font-size: 18px; /* Ukuran font */
+  border: none;
+  border-radius: 5px; /* Sedikit rounded corners */
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  width: auto; /* Tidak lagi menggunakan ukuran tetap */
+}
+
+.footer {
+text-align: center;
+font-size: 0.875rem;
+padding: 2rem 1rem;
+color: #6b7280;
+background: transparent;
+}
+
+.add-book-btn:hover {
+  background-color: #1565c0; /* Warna biru lebih gelap pada hover */
 }

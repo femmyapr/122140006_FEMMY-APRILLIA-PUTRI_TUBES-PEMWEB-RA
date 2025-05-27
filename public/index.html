@@ -1,43 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bacain - Manajemen Bacaan</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <header>
+      <div class="logo">📚 Bacain</div>
+      <nav>
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Buku</a></li>
+          <li><a href="#">Kategori</a></li>
+          <li><a href="#">Masuk</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Selamat Datang di Bacain</h1>
+        <p>Kelola koleksi bacaanmu dan simpan buku favoritmu dalam satu aplikasi digital</p>
+        <button class="cta-btn">Mulai Sekarang</button>
+      </section>
+
+      <section class="book-list">
+        <h2>📘 Daftar Buku</h2>
+        <div class="book-container">
+          <div class="book-card">
+            <div class="book-info">
+              <h3>Atomic Habits</h3>
+              <p>oleh James Clear</p>
+            </div>
+            <div class="book-actions">
+              <select class="status">
+                <option>Ingin dibaca</option>
+                <option>Sedang dibaca</option>
+                <option>Selesai dibaca</option>
+              </select>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Hapus</button>
+            </div>
+          </div>
+
+          <div class="book-card">
+            <div class="book-info">
+              <h3>Laut Bercerita</h3>
+              <p>oleh Leila S. Chudori</p>
+            </div>
+            <div class="book-actions">
+              <select class="status">
+                <option>Ingin dibaca</option>
+                <option>Sedang dibaca</option>
+                <option>Selesai dibaca</option>
+              </select>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Hapus</button>
+            </div>
+          </div>
+
+          <div class="book-card">
+            <div class="book-info">
+              <h3>Bumi Manusia</h3>
+              <p>oleh Pramoedya Ananta Toer</p>
+            </div>
+            <div class="book-actions">
+              <select class="status">
+                <option>Ingin dibaca</option>
+                <option>Sedang dibaca</option>
+                <option>Selesai dibaca</option>
+              </select>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Hapus</button>
+            </div>
+          </div>
+          
+          <div class="book-card">
+            <div class="book-info">
+              <h3>Sapiens: A Brief History of Humankind</h3>
+              <p>oleh Yuval Noah Harari</p>
+            </div>
+            <div class="book-actions">
+              <select class="status">
+                <option>Ingin dibaca</option>
+                <option>Sedang dibaca</option>
+                <option>Selesai dibaca</option>
+              </select>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Hapus</button>
+            </div>
+          </div>
+
+          <div class="book-card">
+            <div class="book-info">
+              <h3>Filosofi Teras</h3>
+              <p>oleh Henry Manampiring</p>
+            </div>
+            <div class="book-actions">
+              <select class="status">
+                <option>Ingin dibaca</option>
+                <option>Sedang dibaca</option>
+                <option>Selesai dibaca</option>
+              </select>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Hapus</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Tombol Tambah Buku -->
+      <button class="add-book-btn">Tambah Buku +</button>
+    </main>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <footer class="footer"> <p>© 2025 Bacain. Dibuat dengan cinta untuk tugas besar Pemrograman Web.</p> </footer> 
   </body>
 </html>
