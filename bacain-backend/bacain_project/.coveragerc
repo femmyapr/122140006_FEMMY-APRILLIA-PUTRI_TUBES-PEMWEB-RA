@@ -1,0 +1,3 @@
+[run]
+source = bacain_project
+omit = bacain_project/test*
