@@ -2,7 +2,7 @@
 
 **Bacain** adalah sebuah aplikasi web berbasis React dan backend yang dibangun menggunakan **Python Pyramid**. Aplikasi ini bertujuan untuk membantu pengguna dalam mengelola koleksi buku mereka dengan fitur-fitur utama seperti penambahan buku baru, daftar buku, dan fitur login pengguna.
 
-### **Fitur Utama Aplikasi Bacain:**
+### **Fitur Utama Aplikasi Bacain:** 
 
 1. **Navbar**
    Navbar adalah komponen navigasi yang tersedia di seluruh halaman aplikasi. Navbar ini menyediakan tautan untuk navigasi ke halaman **Beranda**, **Buku**, **Kategori**, dan **Masuk**. Desain navbar responsif memastikan bahwa aplikasi tetap dapat digunakan dengan nyaman pada perangkat apa pun, baik desktop maupun mobile.
