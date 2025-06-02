@@ -1,6 +1,6 @@
 ### **Bacain: Aplikasi Manajemen Buku**
 
-**Bacain** adalah sebuah aplikasi web berbasis React dan backend yang dibangun menggunakan **Python Pyramid**. Aplikasi ini bertujuan untuk membantu pengguna dalam mengelola koleksi buku mereka dengan fitur-fitur utama seperti penambahan buku baru, daftar buku, dan fitur login pengguna.
+**Bacain** adalah sebuah aplikasi web berbasis React dan backend yang dibangun menggunakan **Python Pyramid**. Aplikasi ini bertujuan untuk membantu pengguna dalam mengelola koleksi buku mereka dengan fitur-fitur utama seperti penambahan buku baru, kategori buku, dan fitur login pengguna.
 
 ### **Fitur Utama Aplikasi Bacain:** 
 
