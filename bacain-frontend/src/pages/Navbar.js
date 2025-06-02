@@ -1,15 +1,14 @@
 import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import './Navbar.css'; // Mengimpor CSS untuk navbar
+import './Navbar.css'; 
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const user = JSON.parse(localStorage.getItem('user')); // Mengambil data user dari localStorage
+  const user = JSON.parse(localStorage.getItem('user')); 
 
-  // Fungsi untuk logout
   const handleLogout = () => {
-    localStorage.removeItem('user'); // Menghapus data user dari localStorage
-    navigate('/login'); // Mengarahkan ke halaman login setelah logout
+    localStorage.removeItem('user'); 
+    navigate('/login'); 
   };
 
   return (

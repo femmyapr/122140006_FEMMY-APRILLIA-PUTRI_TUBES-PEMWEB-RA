@@ -1,4 +1,3 @@
-// 📁 File: src/pages/Categories.js
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 
@@ -6,10 +5,8 @@ const Categories = () => {
   const { items: books } = useSelector((state) => state.books);
   const [selectedCategory, setSelectedCategory] = useState('');
 
-  // Tetapkan kategori tetap (fixed)
-  const categories = ['Fiksi', 'Non Fiksi', 'Pengembangan Diri'];
+const categories = ['Fiksi', 'Non Fiksi', 'Pengembangan Diri'];
 
-  // Filter berdasarkan kategori
   const filteredBooks = selectedCategory
     ? books.filter((book) => book.category === selectedCategory)
     : books;

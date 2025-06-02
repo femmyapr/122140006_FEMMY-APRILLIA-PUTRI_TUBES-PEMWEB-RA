@@ -12,11 +12,9 @@ class User(Base):
 
     def verify_password(self, password: str) -> bool:
         """Verifikasi password yang dimasukkan dengan hash."""
-        # bcrypt.checkpw expects bytes
         try:
             return bcrypt.checkpw(password.encode('utf-8'), self.password_hash.encode('utf-8'))
         except ValueError:
-            # Jika hash tidak valid atau korup, tolak
             return False
 
     @staticmethod

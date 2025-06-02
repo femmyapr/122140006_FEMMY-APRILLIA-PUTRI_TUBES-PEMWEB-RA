@@ -1,4 +1,3 @@
-// src/components/CategoryList.js
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setCategories } from '../redux/categoriesSlice';  // Mengimpor setCategories
