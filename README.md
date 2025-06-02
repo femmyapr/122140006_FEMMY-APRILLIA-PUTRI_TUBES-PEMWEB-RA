@@ -1,74 +1,60 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+### **Bacain: Aplikasi Manajemen Buku**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Bacain** adalah sebuah aplikasi web berbasis React dan backend yang dibangun menggunakan **Python Pyramid**. Aplikasi ini bertujuan untuk membantu pengguna dalam mengelola koleksi buku mereka dengan fitur-fitur utama seperti penambahan buku baru, daftar buku, dan fitur login pengguna.
 
-## Available Scripts
+### **Fitur Utama Aplikasi Bacain:**
 
-In the project directory, you can run:
+1. **Navbar**
+   Navbar adalah komponen navigasi yang tersedia di seluruh halaman aplikasi. Navbar ini menyediakan tautan untuk navigasi ke halaman **Beranda**, **Buku**, **Kategori**, dan **Masuk**. Desain navbar responsif memastikan bahwa aplikasi tetap dapat digunakan dengan nyaman pada perangkat apa pun, baik desktop maupun mobile.
 
-### `npm start`
+2. **Home Page**
+   Halaman utama aplikasi memberikan informasi singkat mengenai aplikasi Bacain, serta menyediakan tombol untuk memulai penggunaan aplikasi. Ini adalah halaman pertama yang dilihat oleh pengguna setelah login atau mengakses aplikasi.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **BookForm**
+   **BookForm** adalah formulir yang memungkinkan pengguna untuk menambahkan buku baru ke aplikasi. Pengguna dapat mengisi informasi buku seperti **judul**, **penulis**, **deskripsi**, **status**, dan **kategori** buku. Setelah formulir disubmit, data buku akan dikirim ke **backend** dan disimpan di **database** menggunakan **PostgreSQL**.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **BookList**
+   Halaman ini menampilkan daftar buku yang sudah ada dalam sistem. Data buku diambil dari **backend** dan ditampilkan dalam bentuk **Grid** dengan **Card** yang menampilkan informasi penting tentang buku seperti **judul**, **penulis**, **status**, dan **deskripsi singkat**.
 
-### `npm test`
+5. **BookCard**
+   Komponen **BookCard** digunakan untuk menampilkan setiap buku dalam format kartu. Setiap kartu buku menerima data dari **props** dan menampilkannya dengan **styling** yang telah disesuaikan agar tampil lebih menarik.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **Teknologi yang Digunakan:**
 
-### `npm run build`
+* **Frontend:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  * **React.js** digunakan untuk membangun antarmuka pengguna interaktif dan dinamis.
+  * **Tailwind CSS** digunakan untuk desain responsif, membuat aplikasi mudah diakses di berbagai perangkat.
+  * **React Router** digunakan untuk mengelola navigasi antara berbagai halaman aplikasi.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* **Backend:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  * **Python Pyramid** digunakan untuk membangun backend API yang menangani operasi CRUD (Create, Read, Update, Delete) untuk buku.
+  * **PostgreSQL** digunakan sebagai **database** untuk menyimpan data pengguna dan buku secara aman.
 
-### `npm run eject`
+* **Pengiriman dan Penyimpanan Data:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  * **Axios** digunakan untuk melakukan **HTTP requests** dari frontend ke backend.
+  * **SQLAlchemy ORM** digunakan untuk mempermudah interaksi antara backend dan database PostgreSQL.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **Progres Aplikasi:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Aplikasi **Bacain** telah mencapai beberapa milestone penting dalam pembangunannya:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Frontend (Progress 2):**
 
-## Learn More
+   * Penggunaan **Navbar** yang responsif dan navigasi ke berbagai halaman aplikasi.
+   * Implementasi halaman **Home** untuk informasi aplikasi dan akses awal.
+   * Penyempurnaan komponen **BookForm** untuk penambahan buku baru dengan data yang valid.
+   * Tampilan daftar buku menggunakan **BookList** dan **BookCard** yang menampilkan data dari backend.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Backend (Progress Final):**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   * Backend API dengan **Python Pyramid** yang menangani pengelolaan buku dan pengguna.
+   * Penggunaan **PostgreSQL** untuk menyimpan data buku dan pengguna secara efisien.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### **Kesimpulan:**
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# 122140006_FEMMY-APRILLIA-PUTRI_TUBES-PEMWEB-RA
->>>>>>> 50cf75cfa04a5fc2888c78457bb83b8f96f86deb
+Aplikasi **Bacain** adalah alat yang efisien dan responsif bagi pengguna untuk mengelola koleksi buku mereka. Dengan penggunaan teknologi terbaru seperti **React.js** di frontend dan **Python Pyramid** di backend, aplikasi ini menawarkan pengalaman yang menyenangkan dan fungsionalitas yang lengkap dalam manajemen data buku.
