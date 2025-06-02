@@ -14,7 +14,7 @@
    **BookForm** adalah formulir yang memungkinkan pengguna untuk menambahkan buku baru ke aplikasi. Pengguna dapat mengisi informasi buku seperti **judul**, **penulis**, **deskripsi**, **status**, dan **kategori** buku. Setelah formulir disubmit, data buku akan dikirim ke **backend** dan disimpan di **database** menggunakan **PostgreSQL**.
 
 4. **BookList**
-   Halaman ini menampilkan daftar buku yang sudah ada dalam sistem. Data buku diambil dari **backend** dan ditampilkan dalam bentuk **Grid** dengan **Card** yang menampilkan informasi penting tentang buku seperti **judul**, **penulis**, **status**, dan **deskripsi singkat**.
+   Halaman ini menampilkan daftar buku yang sudah ada dalam sistem. Data buku diambil dari **backend** dan ditampilkan dalam bentuk **Grid** dengan **Card** yang menampilkan informasi penting tentang buku seperti **judul**, **penulis**, **status**, **hapus** dan **edit**.
 
 5. **BookCard**
    Komponen **BookCard** digunakan untuk menampilkan setiap buku dalam format kartu. Setiap kartu buku menerima data dari **props** dan menampilkannya dengan **styling** yang telah disesuaikan agar tampil lebih menarik.
